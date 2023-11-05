@@ -1,0 +1,53 @@
+.mainPage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+.circle {
+  position: fixed;
+
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+.circlePink {
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+  background-color: var(--color-pink);
+}
+.circleGreen {
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--color-green);
+}
+
+.questionMark {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 220px;
+}
+
+@media (max-width: 990px) {
+  .mainPage {
+    padding: 15px 0;
+  }
+  .circle {
+    height: 180px;
+    width: 180px;
+  }
+  .questionMark {
+    width: 90px;
+    height: 130px;
+  }
+}

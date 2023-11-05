@@ -1,0 +1,4 @@
+we are going to test some stuff:
+- react-query
+- recoil/zustand
+- react-hook-form

@@ -1,0 +1,115 @@
+.guessGameplay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 90vh;
+  padding: 25px 20px;
+  overflow: hidden;
+
+  transition: all 0.2s linear;
+}
+
+.blurred {
+  filter: blur(10px);
+}
+
+.totalQuestions {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  position: absolute;
+  top: 2%;
+  right: 0;
+  z-index: 1;
+  font-size: 40px;
+}
+
+.questionTitle {
+  max-width: 80%;
+  display: block;
+
+  margin: 0 auto;
+  padding: 5px 20px;
+
+  color: #3e3d78;
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.guessImageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 430px;
+  margin: 0 auto;
+}
+
+.guessPicture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+
+  text-align: center;
+  transform: scale(0);
+
+  color: red;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.errorActive {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 990px) {
+  .guessGameplay {
+    padding: 10px 0;
+  }
+  .questionTitle {
+    font-size: 20px;
+    padding: 0;
+  }
+  .guessImageWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .totalQuestions {
+    font-size: 20px;
+  }
+  .actions {
+    margin: 10px 0;
+  }
+  .error {
+    font-size: 16px;
+  }
+}

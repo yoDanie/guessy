@@ -1,0 +1,184 @@
+.mainPage {
+  position: relative;
+  padding: 40px 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s linear;
+  overflow: hidden;
+}
+.mainPageBlurred {
+  filter: blur(10px);
+}
+
+.circle {
+  position: absolute;
+
+  width: 416px;
+  height: 416px;
+  border-radius: 50%;
+}
+
+.circleYellow {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--color-yellow);
+}
+
+.circlePink {
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--color-pink);
+}
+
+.questionMark {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 270px;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 450px;
+  background-color: #d6d6e2;
+  border-radius: 30px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.quote {
+  position: absolute;
+  width: 330px;
+  height: 180px;
+  top: -35%;
+  left: -60%;
+  z-index: 1;
+}
+
+.logo {
+  margin-bottom: 30px;
+
+  font-family: 'Quicksand', sans-serif;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-violet);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #3e3d78, 2px 2px 0 #3e3d78, 3px 3px 0 #3e3d78, 4px 4px 0 #3e3d78,
+    5px 5px 0 #3e3d78, 6px 6px 0 #3e3d78;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.userMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+
+  height: 50px;
+
+  text-align: center;
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+.error {
+  color: red;
+  opacity: 1;
+  transform: scale(1);
+}
+.success {
+  color: green;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.pincode {
+  height: 50px;
+  margin-bottom: 20px;
+
+  border: 2px dashed rgba(0, 0, 0, 0.5);
+
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+.pincode::placeholder {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Убирает стрелочки сбоку*/
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'],
+input[type='number']:hover,
+input[type='number']:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 990px) {
+  .quote {
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 90px;
+    top: -20%;
+    left: 50%;
+  }
+  .menu {
+    width: 100%;
+
+    padding: 30px 10px;
+  }
+  .circle {
+    height: 130px;
+    width: 130px;
+  }
+  .circleYellow {
+    top: -5%;
+    left: -5%;
+  }
+
+  .circlePink {
+    bottom: -5%;
+    right: -5%;
+  }
+  .questionMark {
+    width: 50px;
+    height: 70px;
+  }
+  .logo {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .pincode {
+    font-size: 13px;
+  }
+}

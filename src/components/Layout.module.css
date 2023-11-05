@@ -1,0 +1,11 @@
+@import url(../vars.css);
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}

@@ -1,0 +1,15 @@
+:root {
+  --color-white: hsl(1, 100%, 100%);
+  --color-yellow: hsl(58, 100%, 79%); /* #FFFB93 */
+  --color-violet: hsl(241, 65%, 67%); /* #7774E1 */
+  --color-violetDark: hsl(241, 33%, 36%); /* #3E3D78 */
+  --color-green: hsl(169, 65%, 67%); /* #74E1CE */
+  --color-pink: hsl(299, 100%, 93%); /* #FED9FF */
+  --color-grey: hsl(241, 18%, 86%); /* #D6D6E2 */
+
+  --color-hoverWhite: hsl(1, 0%, 95%);
+  --color-hoverViolet: hsl(241, 42%, 55%);
+  --color-hoverGreen: hsl(169, 70%, 60%);
+  --color-hoverYellow: hsl(58, 100%, 70%);
+  --color-hoverPink: hsl(299, 95%, 88%);
+}

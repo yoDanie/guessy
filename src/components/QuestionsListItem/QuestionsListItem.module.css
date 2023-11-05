@@ -1,0 +1,84 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 220px;
+  padding: 10px;
+  cursor: grab;
+}
+.active {
+  background-color: rgba(214, 214, 226, 0.64);
+}
+.draggedOver {
+  background-color: var(--color-yellow);
+}
+.number {
+  display: flex;
+  align-items: center;
+  height: 15%;
+  font-size: 20px;
+}
+.deleteIcon {
+  background-image: url(../../assets/icons/delete.svg);
+  background-size: contain;
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  z-index: 10;
+  width: 25px;
+  height: 25px;
+}
+
+.card {
+  height: 85%;
+
+  padding: 10px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.title {
+  height: 15%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+.image {
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.placeholder {
+  object-fit: contain;
+}
+
+@media (max-width: 990px) {
+  .number {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .card {
+    padding: 5px;
+    height: 90px;
+  }
+  .item {
+    padding: 5px;
+    margin-bottom: 0;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .deleteIcon {
+    top: 0;
+  }
+}

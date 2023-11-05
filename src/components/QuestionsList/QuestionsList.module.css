@@ -1,0 +1,38 @@
+.questionsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17%;
+  padding: 15px 0;
+  border-right: 5px dashed var(--color-violetDark);
+  overflow-y: auto;
+}
+
+.questionsList a,
+.questionsList a:visited {
+  color: inherit;
+}
+
+.info {
+  padding: 10px;
+  min-height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  .questionsList {
+    width: 100%;
+    height: 130px;
+    padding: 0;
+    flex-direction: row;
+    overflow-x: auto;
+
+    border-right: none;
+    border-bottom: 3px dashed var(--color-violet);
+  }
+  .navlink {
+    min-width: 40%;
+    width: 40%;
+  }
+}

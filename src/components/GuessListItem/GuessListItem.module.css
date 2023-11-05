@@ -1,0 +1,68 @@
+.guessListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  width: 100%;
+  max-width: 650px;
+  height: 160px;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+
+  background-color: var(--color-yellow);
+  border: 5px solid var(--color-violetDark);
+  border-radius: 10px;
+  color: var(--color-violetDark);
+  font-size: 24px;
+}
+
+.guessListItem:last-child {
+  margin-bottom: 0;
+}
+
+.guessTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter {
+  font-size: 32px;
+  font-weight: 700;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 990px) {
+  .guessListItem {
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    font-size: 18px;
+  }
+  .guessTitle {
+    font-size: 22px;
+  }
+  .counter {
+    font-size: 22px;
+  }
+}

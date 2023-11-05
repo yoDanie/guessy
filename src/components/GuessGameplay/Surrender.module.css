@@ -1,0 +1,28 @@
+.surrenderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  pointer-events: none;
+  transition: all 0.2s linear;
+}
+
+.surrender {
+  width: 60vw;
+  object-fit: contain;
+}
+
+@media (max-width: 575px) {
+  .surrender {
+    width: 90vw;
+  }
+}
